@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759390899745,
+  "lastUpdate": 1761638117305,
   "repoUrl": "https://github.com/willb-tech/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -104,6 +104,37 @@ window.BENCHMARK_DATA = {
             "range": "0.28890000000000005",
             "unit": "ms",
             "extra": "15100 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liz041218888@gmail.com",
+            "name": "Liz",
+            "username": "Lizevolving"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18b8747005effbff0bba122acf8b0191297252e9",
+          "message": "Update CLAUDE_CODE_SETUP.md (#276)\n\n* Update CLAUDE_CODE_SETUP.md\n\ndocs: Improve CLI setup for PowerShell and scope management\r\n\r\nThis commit introduces two improvements to the CLAUDE_CODE_SETUP.md documentation to enhance user experience, particularly for Windows users and those managing configuration scopes.\r\n\r\n1.  Add PowerShell-Compatible Commands:\r\n    The original `claude mcp add` commands use a syntax that fails in native Windows PowerShell due to its parameter parsing. This change adds dedicated code blocks for PowerShell, which correctly wrap the `-e` arguments in single quotes.\r\n\r\n2.  Clarify Configuration Scope Management:\r\n    The documentation previously lacked guidance on the default configuration scope and how to switch to a `project` scope. A new \"Tips\" section has been added to:\r\n    - Explain the default scope and the purpose of `--scope project`.\r\n    - Provide a clear, recommended CLI method for switching scopes.\r\n    - Offer an advanced, manual method by editing the `.claude.json` file.\n\n* Update CLAUDE_CODE_SETUP.md  again",
+          "timestamp": "2025-10-27T22:43:48+01:00",
+          "tree_id": "7fc3ae049f9d8346cd274a449032eed62cd7b3e7",
+          "url": "https://github.com/willb-tech/n8n-mcp/commit/18b8747005effbff0bba122acf8b0191297252e9"
+        },
+        "date": 1761638116914,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0136,
+            "range": "0.3096",
+            "unit": "ms",
+            "extra": "73341 ops/sec"
           }
         ]
       }
